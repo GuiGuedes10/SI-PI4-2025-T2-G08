@@ -1,1 +1,2 @@
-# Smart.gg
+# SmartGG_backend
+

@@ -1,0 +1,16 @@
+meta {
+  name: GetSpellNameById
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:8080/spells/name/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+meta {
+  name: CreateUserRequest
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/users/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "user@example.com",
+    "password": "senha123",
+    "gameName": "ishida",
+    "tagLine": "br1"
+  }
+}
+
+tests {
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
