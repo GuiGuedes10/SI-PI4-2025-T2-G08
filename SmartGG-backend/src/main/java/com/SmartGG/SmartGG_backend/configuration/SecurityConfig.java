@@ -20,7 +20,9 @@ public class SecurityConfig {
                 .requestMatchers("/spells/**").permitAll()
                 .requestMatchers("/runes/**").permitAll()
                 .anyRequest().authenticated() // outros endpoints exigem login
+                
             )
+            .cors(cors -> cors.disable())
             .httpBasic(); // habilita autenticação básica (opcional)
 
         return http.build();

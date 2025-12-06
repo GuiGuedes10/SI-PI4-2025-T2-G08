@@ -3,6 +3,7 @@ package com.SmartGG.SmartGG_backend.controllers;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,6 +20,7 @@ import com.SmartGG.SmartGG_backend.dto.UserWithMasteryDTO;
 import com.SmartGG.SmartGG_backend.services.UserService;
 
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/users")
 public class UserController {
